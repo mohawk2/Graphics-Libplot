@@ -5,7 +5,7 @@ use Graphics::Libplot ':ALL';
 $device = 'X';
 if (@ARGV) {
     $device = $ARGV[0];	
-    die "Uknown device: $ARGV[0]" unless $ARGV[0] =~ /^ps|X|fig$/;
+#    die "Uknown device: $ARGV[0]" unless $ARGV[0] =~ /^ps|X|fig$/;
 }
 
 {   # environment for local variables

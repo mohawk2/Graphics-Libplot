@@ -5,7 +5,7 @@ use Graphics::Libplot ':ALL';
 $device = 'X';
 if (@ARGV) {
     $device = $ARGV[0];	
-    die "Uknown device: $ARGV[0]" unless $ARGV[0] =~ /^X$/;
+#    die "Uknown device: $ARGV[0]" unless $ARGV[0] =~ /^X$/;
 }
 
 

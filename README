@@ -8,7 +8,8 @@ This is a perl module which allows the libplot plotting
 routines to be called from the perl scripting language.
 libplot currently takes relatively primitive graphics commands.
 Several output formats, including xfig, postscript and
-an X11 driver are available.
+an X11 driver are available. (All the drivers in libplot seem to
+work.)
 
 In order to build this package, you need the libplot library to
 be built and installed.  It is part of the plotutils package,

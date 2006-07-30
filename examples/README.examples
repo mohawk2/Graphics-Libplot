@@ -12,3 +12,7 @@ Some of them take the device type as an optional argument.
 eg,
 ccurve X
 ccurve ps
+Possible devices are
+ "png", "pnm", "gif", "svg", "ai", "cgm", "fig", "pcl", "hpgl",
+ "regis", "tek", or "meta" .
+

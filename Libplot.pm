@@ -21,7 +21,7 @@ require AutoLoader;
 #	__END_DECLS
 #	___const
 #);
-$VERSION = '2.2.1';
+$VERSION = '2.2.2';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -188,13 +188,23 @@ the libplot library.  The libplot library is included in the
 plotutils package.  Wrappers for each published C function
 are present. So the section of the plotutils info pages on
 programming in C should be your main reference.  There are a
-few possible confusions, which are noted below.
+few possible confusions, which are noted below. libplot has
+three different api's. This perl module provides and
+interface to the second one. It is the same as the most
+recent api, except that the the functions are not
+re-entrant. The api supported here is described in the
+section "Older C application programming interfaces" in the
+libplot manual.
+
 
 Some of the C routines require character constants rather
 than strings.  When using the equivalent perl function, you
 must wrap the character with the 'ord' function. For
 instance, alabel(ord 'c', ord 'c', "some text"); , will
 write some centered text.
+
+There is another unrelated perl-module interface to GNU libplot, called
+C<Graphics::Plotter>.
 
 =head1 EXPORTING FUNCTIONS
 
@@ -266,6 +276,11 @@ This example draws a spiraling box pattern.
  pl_selectpl(0);
  pl_deletepl($handle);
 
+
+=head1 BUGS
+
+The newest API is not supported. There is no test suite with this module, so
+it is not clear that everything works correctly.
 
 =head1 AUTHOR
 

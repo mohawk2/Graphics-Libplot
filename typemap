@@ -40,24 +40,12 @@ Boolean			T_IV
 double			T_DOUBLE
 SysRet			T_SYSRET
 SysRetLong		T_SYSRET
-FILE *			T_IN
-FileHandle		T_PTROBJ
-InputStream		T_IN
-InOutStream		T_INOUT
-OutputStream		T_OUT
+#FILE *			T_IN
+#FileHandle		T_PTROBJ
+#InputStream		T_IN
+#InOutStream		T_INOUT
+#OutputStream		T_OUT
 
-## LOCAL ADDITIONS FOR Grafix
-
-#main_window  *		O_OBJECT
-#window  *		O_OBJECT
-#text_win *              O_OBJECT
-
-
-main_window  *		T_PTROBJ
-window  *		T_PTROBJ
-text_win *              T_PTROBJ
-quit_button *           T_PTROBJ
-lattice_manager *        T_PTROBJ
 
 double *		T_PV
 float  *		T_PV
