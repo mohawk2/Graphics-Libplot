@@ -237,7 +237,7 @@ be added, and your scripts may need to be changed.
 =head1 EXAMPLES
 
 There are additional examples included in the source distribution. 
-(They are in /usr/doc/libplot-perl/examples on debian systems.)
+(They are in /usr/share/doc/libplot-perl/examples on debian systems.)
 This example draws a spiraling box pattern.
 
  use Graphics::Libplot ':ALL';
