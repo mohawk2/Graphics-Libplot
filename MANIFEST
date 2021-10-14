@@ -23,4 +23,3 @@ typemap
 util/plot.h
 util/trans
 util/transout
-META.yml                                 Module meta-data (added by MakeMaker)
