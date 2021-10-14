@@ -1,6 +1,9 @@
 use strict;
 use warnings;
 use ExtUtils::MakeMaker;
+use Devel::CheckLib qw(check_lib_or_exit);
+
+check_lib_or_exit( lib => [ 'plot' ] );
 
 WriteMakefile(
     NAME	=> 'Graphics::Libplot',
@@ -18,5 +21,8 @@ WriteMakefile(
         },
         x_IRC => 'irc://irc.perl.org/#pdl',
       },
+    },
+    CONFIGURE_REQUIRES => {
+        'Devel::CheckLib' => '1.14',
     },
 );
